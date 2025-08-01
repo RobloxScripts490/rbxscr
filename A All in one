@@ -8,6 +8,8 @@ elseif placeId == 132821440336521 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripts490/rbxscr/refs/heads/main/Merge%20For%20DIAMONDS%20Script"))()
 elseif placeId == 86688009497733 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripts490/rbxscr/refs/heads/main/loader"))()
+elseif placeId == 118611268319028 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripts490/rbxscr/refs/heads/main/merge%20for%20speed"))()
 else
     -- Creating the main GUI frame
     local gui = Instance.new("ScreenGui")
@@ -17,8 +19,8 @@ else
 
     -- Main frame with soft background and rounded corners
     local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0, 300, 0, 450) -- Increased height to fit all buttons
-    frame.Position = UDim2.new(0.5, -150, 0.5, -225)
+    frame.Size = UDim2.new(0, 300, 0, 510) -- Increased height to fit all buttons
+    frame.Position = UDim2.new(0.5, -150, 0.5, -255)
     frame.BackgroundColor3 = Color3.fromRGB(220, 220, 230)
     frame.BorderSizePixel = 0
     frame.Parent = gui
@@ -157,6 +159,14 @@ else
         Color3.fromRGB(50, 50, 50),
         {ColorSequenceKeypoint.new(0, Color3.fromRGB(152, 251, 152)), ColorSequenceKeypoint.new(1, Color3.fromRGB(127, 205, 127))}
     )
+    createButton(
+        "Merge For SPEED! (click to copy link)",
+        "https://www.roblox.com/tr/games/118611268319028/Merge-for-SPEED",
+        370,
+        Color3.fromRGB(255, 182, 193),
+        Color3.fromRGB(50, 50, 50),
+        {ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 192, 203)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 160, 180))}
+    )
 
     -- Close button (X)
     local closeButton = Instance.new("TextButton")
@@ -217,8 +227,8 @@ else
     -- Make GUI responsive for mobile
     local function adjustForMobile()
         if game:GetService("UserInputService").TouchEnabled then
-            frame.Size = UDim2.new(0, 250, 0, 400)
-            frame.Position = UDim2.new(0.5, -125, 0.5, -200)
+            frame.Size = UDim2.new(0, 250, 0, 460)
+            frame.Position = UDim2.new(0.5, -125, 0.5, -230)
             title1.TextSize = 20
             title2.TextSize = 20
             for _, btn in pairs(frame:GetChildren()) do
