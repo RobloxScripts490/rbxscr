@@ -10,6 +10,8 @@ elseif placeId == 86688009497733 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripts490/rbxscr/refs/heads/main/loader"))()
 elseif placeId == 118611268319028 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripts490/rbxscr/refs/heads/main/merge%20for%20speed"))()
+elseif placeId == 105492766146737 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripts490/rbxscr/refs/heads/main/Bubble%20gum%20Jump"))()
 else
     -- Creating the main GUI frame
     local gui = Instance.new("ScreenGui")
@@ -17,10 +19,10 @@ else
     gui.ResetOnSpawn = false
     gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-    -- Main frame with soft background and rounded corners
+    -- Main frame with soft background and rounded corners, reduced height
     local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0, 300, 0, 510) -- Increased height to fit all buttons
-    frame.Position = UDim2.new(0.5, -150, 0.5, -255)
+    frame.Size = UDim2.new(0, 280, 0, 540) -- Adjusted size to accommodate new button
+    frame.Position = UDim2.new(0.5, -140, 0.5, -270)
     frame.BackgroundColor3 = Color3.fromRGB(220, 220, 230)
     frame.BorderSizePixel = 0
     frame.Parent = gui
@@ -129,7 +131,7 @@ else
     -- Creating buttons with coordinated soft colors
     createButton(
         "Car Crash Test (click to copy link)",
-        "https://www.roblox.com/tr/games/7720943627/Car-Crash-Test",
+        "https://www.roblox.com/games/7720943627/Car-Crash-Test",
         130,
         Color3.fromRGB(255, 204, 153),
         Color3.fromRGB(50, 50, 50),
@@ -137,7 +139,7 @@ else
     )
     createButton(
         "Eat Blobs Simulator (click to copy link)",
-        "https://www.roblox.com/tr/games/8200787440/Eat-Blobs-Simulator",
+        "https://www.roblox.com/games/8200787440/Eat-Blobs-Simulator",
         190,
         Color3.fromRGB(173, 216, 230),
         Color3.fromRGB(50, 50, 50),
@@ -145,7 +147,7 @@ else
     )
     createButton(
         "Merge for DIAMONDS (click to copy link)",
-        "https://www.roblox.com/tr/games/132821440336521/Merge-for-DIAMONDS",
+        "https://www.roblox.com/games/132821440336521/Merge-for-DIAMONDS",
         250,
         Color3.fromRGB(221, 160, 221),
         Color3.fromRGB(50, 50, 50),
@@ -153,7 +155,7 @@ else
     )
     createButton(
         "Eat Pizza to Grow GIGACHAD (click to copy link)",
-        "https://www.roblox.com/tr/games/86688009497733/Eat-Pizza-to-Grow-GIGACHAD-SUMMER",
+        "https://www.roblox.com/games/86688009497733/Eat-Pizza-to-Grow-GIGACHAD-SUMMER",
         310,
         Color3.fromRGB(144, 238, 144),
         Color3.fromRGB(50, 50, 50),
@@ -161,11 +163,19 @@ else
     )
     createButton(
         "Merge For SPEED! (click to copy link)",
-        "https://www.roblox.com/tr/games/118611268319028/Merge-for-SPEED",
+        "https://www.roblox.com/games/118611268319028/Merge-for-SPEED",
         370,
         Color3.fromRGB(255, 182, 193),
         Color3.fromRGB(50, 50, 50),
         {ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 192, 203)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 160, 180))}
+    )
+    createButton(
+        "Bubble Gum Jumping (click to copy link)",
+        "https://www.roblox.com/games/105492766146737/Bubble-Gum-Jumping-PETS",
+        430,
+        Color3.fromRGB(255, 228, 225),
+        Color3.fromRGB(50, 50, 50),
+        {ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 245, 238)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 182, 193))}
     )
 
     -- Close button (X)
@@ -227,8 +237,8 @@ else
     -- Make GUI responsive for mobile
     local function adjustForMobile()
         if game:GetService("UserInputService").TouchEnabled then
-            frame.Size = UDim2.new(0, 250, 0, 460)
-            frame.Position = UDim2.new(0.5, -125, 0.5, -230)
+            frame.Size = UDim2.new(0, 230, 0, 480)
+            frame.Position = UDim2.new(0.5, -115, 0.5, -240)
             title1.TextSize = 20
             title2.TextSize = 20
             for _, btn in pairs(frame:GetChildren()) do
