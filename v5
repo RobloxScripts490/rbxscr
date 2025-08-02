@@ -186,7 +186,7 @@ end, "")
 
 -- Links Dropdown
 column2:create("dropdown", "Links", {[1] = "Youtube Channel"}, 1, function()
-    setclipboard("https://www.youtube.com/@BarisScripts")
+    setclipboard("https://www.youtube.com/@BarisScripts1")
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Link has been copied!",
         Text = "Paste it to your browser.",
