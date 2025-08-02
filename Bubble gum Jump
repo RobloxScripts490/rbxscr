@@ -106,7 +106,7 @@ tab:AddList({
     text = "Links",
     values = {"YT Channel(copy link)"},
     callback = function(value)
-        setclipboard("https://youtube.com/@barstuna8581")
+        setclipboard("https://www.youtube.com/@BarisScripts")
     end,
     open = false,
     flag = "color_option"
