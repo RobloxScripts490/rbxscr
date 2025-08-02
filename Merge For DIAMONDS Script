@@ -308,7 +308,7 @@ end)
 
 -- Links Dropdown
 window:Dropdown("Links", {"Youtube Channel"}, function(name)
-    setclipboard("https://www.youtube.com/@BarisScripts")
+    setclipboard("https://www.youtube.com/@BarisScripts1")
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Link has been copied!",
         Text = "Paste it to your browser.",
