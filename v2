@@ -148,7 +148,7 @@ sectionB:Divider("Links & UI Settings")
 
 -- Links Button (as a substitute for dropdown)
 sectionB:Button("Copy Youtube Link", function()
-    setclipboard("https://www.youtube.com/@BarisScripts")
+    setclipboard("https://www.youtube.com/@BarisScripts1")
     window:Notify("Success", "Link has been copied! Paste it to your browser.", "Ok", "rbxassetid://12608259004", function() end)
 end)
 
