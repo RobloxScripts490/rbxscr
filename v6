@@ -202,7 +202,7 @@ Window:AddList({
     value = "Youtube Channel",
     values = {"Youtube Channel"},
     callback = function()
-        setclipboard("https://www.youtube.com/@barstuna8581")
+        setclipboard("https://www.youtube.com/@BarisScripts")
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Link has been copied!",
             Text = "Paste it to your browser.",
