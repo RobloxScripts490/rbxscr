@@ -196,7 +196,7 @@ local linksDropdown = folder.new("dropdown", {
 })
 linksDropdown.new("Youtube Channel")
 linksDropdown.event:Connect(function(name)
-    setclipboard("https://www.youtube.com/@barstuna8581")
+    setclipboard("https://www.youtube.com/@BarisScripts")
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Link has been copied!",
         Text = "Paste it to your browser.",
