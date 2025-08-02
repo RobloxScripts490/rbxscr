@@ -51,6 +51,9 @@ userInputService.JumpRequest:Connect(function()
     end
 end)
 
+
+
+
 -- GODMODE-FRONTMAN Toggle
 window:Toggle("GODMODE-FRONTMAN", false, function(bool)
     local args = {
@@ -239,6 +242,24 @@ window:Box("Jump Power", function(text, focuslost)
         -- Değerleri koru
         coroutine.wrap(enforceValues)(humanoid)
     end
+end)
+
+window:Button("GET LUNAR CARPET", function()
+            local args = {
+        [1] = "Space"
+    }
+
+    game:GetService("ReplicatedStorage").CratesUtilities.Remotes.GiveReward:FireServer(unpack(args))
+
+end)
+
+window:Button("GET LASERGUN", function()
+            local args = {
+        [1] = "Gun"
+    }
+
+    game:GetService("ReplicatedStorage").CratesUtilities.Remotes.GiveReward:FireServer(unpack(args))
+
 end)
 
 window:Button("Get Frontman Free", function()
